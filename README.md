@@ -43,18 +43,16 @@ I used KNeighborsClassifier from sklearn.neighbors to build and train the KNN mo
 
 To find the most effective number of neighbors (K), I ran a loop to test K values from 1 to 10. For each K, I:
 
--Trained a new model
--Made predictions on the test set
--Calculated the accuracy
-
-This helped me understand how the choice of K affects the model's performance. I found that the model performed best around K = 3 to 5, with accuracy reaching above 95%.
+- Trained a new model
+- Made predictions on the test set
+- Calculated the accuracy
 
 **5. Model Evaluation**
 
 Once I had the best K value, I evaluated the model in more detail using:
 
--Accuracy score — to measure the overall correctness of predictions.
--Confusion Matrix — to visualize how many predictions were true positives, true negatives, false positives, and false negatives.
+- Accuracy score is used to measure the overall correctness of predictions.
+- Confusion Matrix is used to visualize how many predictions were true positives, true negatives, false positives, and false negatives.
 
 The confusion matrix provided an understanding of how well the KNN model was at classifying various flowers. The upper left cell of the confusion matrix told me that all 10 samples for the Iris-setosa species were predicted 'correctly'. The same pattern occurred for Iris-versicolor, where all 10 predicted were correct. On the Iris-virginica species, the KNN model predicted correctly on 8 of the samples and incorrectly predicted 2 samples as Iris-versicolor. 
 
@@ -70,11 +68,11 @@ The first thing that struck me was how well Iris-setosa was separated from the o
 
 This task helped me:
 
--Understand how KNN is an instance-based (lazy) learner that makes predictions based on closest training examples.
--See the impact of normalization on distance-based models.
--Learn how changing K balances the bias-variance tradeoff.
--Visualize how the algorithm classifies data in feature space using decision boundaries.
--Appreciate how even a simple algorithm like KNN can give high accuracy when properly tuned and visualized
+- Understand how KNN is an instance-based (lazy) learner that makes predictions based on closest training examples.
+- See the impact of normalization on distance-based models.
+- Learn how changing K balances the bias-variance tradeoff.
+- Visualize how the algorithm classifies data in feature space using decision boundaries.
+- Appreciate how even a simple algorithm like KNN can give high accuracy when properly tuned and visualized
 
 ---
 
@@ -86,9 +84,23 @@ This task helped me:
 - `scikit-learn` — for model training and evaluation
 
 ---
-## ▶️ How to Run
+## How to Run
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/task-6-knn-classification.git
    cd task-6-knn-classification
+
+2. Install dependencies:
+   ```bash
+   pip install pandas numpy matplotlib scikit-learn
+
+3. Run the Jupyter Notebook:
+   ```bash
+   jupyter notebook knn.ipynb
+
+## Author
+
+**Anmol Thakur**
+
+GitHub: [anmolthakur74](https://github.com/anmolthakur74/)
